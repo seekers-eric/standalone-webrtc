@@ -1,4 +1,4 @@
-{
+
   "socketURL": "/",
   "socketMessageEvent": "RTCMultiConnection-Message",
   "socketCustomEvent": "RTCMultiConnection-Custom-Message",
