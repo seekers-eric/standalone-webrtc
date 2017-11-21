@@ -1,0 +1,36 @@
+.main {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
+.volume-control, .media-controls {
+    display: none;
+}
+
+#videos-container {
+    position: relative;
+    width: 100%;
+}
+
+#videos-container .media-box video {
+    border-radius: 8px;
+}
+
+#videos-container .media-box video.screen{
+    width: 100%;
+}
+
+#videos-container .media-box video.camera{
+    border: 25px solid rgba(0, 0, 0, .2);
+}
+
+.media-box.screen {
+    padding: 15px;
+}

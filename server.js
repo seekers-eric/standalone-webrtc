@@ -9,7 +9,7 @@ function resolveURL(url) {
 }
 
 // Please use HTTPs on non-localhost domains.
-var isUseHTTPs = false;
+var isUseHTTPs = true;
 
 // var port = 443;
 var port = process.env.PORT || 9001;
@@ -68,10 +68,6 @@ function serverHandler(request, response) {
             response.write('404 Not Found: ' + path.join('/', uri) + '\n');
             response.end();
             return;
-        }
-
-        if (filename && filename.indexOf('Video-Broadcasting.html') !== -1) {
-            filename = filename.replace('Video-Broadcasting.html', 'video-broadcasting.html');
         }
 
         var stats;
